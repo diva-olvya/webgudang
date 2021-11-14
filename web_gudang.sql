@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.2
--- http://www.phpmyadmin.net
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Mar 17, 2018 at 11:50 
--- Server version: 10.1.19-MariaDB
--- PHP Version: 5.6.28
+-- Host: 127.0.0.1
+-- Generation Time: Nov 14, 2021 at 03:36 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -43,22 +45,23 @@ CREATE TABLE `tb_barang_keluar` (
 --
 
 INSERT INTO `tb_barang_keluar` (`id`, `id_transaksi`, `tanggal_masuk`, `tanggal_keluar`, `lokasi`, `kode_barang`, `nama_barang`, `satuan`, `jumlah`) VALUES
-(1, 'WG-201713067948', '8/11/2017', '11/11/2017', 'NTB', '8888166995215', 'Ciki Walens', 'Dus', '50'),
-(2, 'WG-201713067948', '8/11/2017', '11/12/2017', 'NTB', '8888166995215', 'Ciki Walens', 'Dus', '6'),
-(3, 'WG-201713549728', '4/11/2017', '11/11/2017', 'Banten', '1923081008002', 'Buku Hiragana', 'Pack', '3'),
-(4, 'WG-201774896520', '9/11/2017', '12/11/2017', 'Yogyakarta', '60201311121008264', 'Battery ZTE', 'Dus', '3'),
-(5, 'WG-201727134650', '05/12/2017', '20/12/2017', 'Jakarta', '29312390203', 'Susu', 'Dus', '17'),
-(6, 'WG-201810974628', '15/01/2018', '16/01/2018', 'Lampung', '1923081008002', 'Buku Nihongo', 'Dus', '50'),
-(7, 'WG-201781267543', '7/11/2017', '17/01/2018', 'Yogyakarta', '97897952889', 'Buku Framework Codeigniter', 'Dus', '1'),
-(8, 'WG-201832570869', '15/01/2018', '17/01/2018', 'Bali', '1923081008002', 'test', 'Dus', '10'),
-(9, 'WG-201893850472', '15/01/2018', '18/01/2018', 'Bali', '1923081008002', 'lumpur nartugo', 'Pcs', '11'),
-(10, 'WG-201781267543', '7/11/2017', '15/01/2018', 'Yogyakarta', '97897952889', 'Buku Framework Codeigniter', 'Dus', '1'),
-(11, 'WG-201727134650', '05/12/2017', '15/01/2018', 'Jakarta', '29312390203', 'Susu', 'Dus', '3'),
-(12, 'WG-201774896520', '9/11/2017', '15/01/2018', 'Yogyakarta', '60201311121008264', 'Battery ZTE', 'Dus', '3'),
-(13, 'WG-201727134650', '05/12/2017', '16/01/2018', 'Jakarta', '29312390203', 'Susu', 'Dus', '1'),
-(14, 'WG-201727134650', '05/12/2017', '17/01/2018', 'Jakarta', '29312390203', 'Susu', 'Dus', '1'),
-(15, 'WG-201885472106', '18/01/2018', '19/01/2018', 'Riau', '8996001600146', 'Teh Pucuk', 'Dus', '50'),
-(16, 'WG-201871602934', '18/01/2018', '16/03/2018', 'Papua', '312212331222', 'Kopi Hitam', 'Dus', '10');
+(1, 'WG-202113067948', '02/07/2021', '08/08/2021', 'NTB', '8888166995215', 'Sari Roti', 'Dus', '50'),
+(2, 'WG-202113067948', '02/07/2021', '08/08/2021', 'NTB', '8888166995215', 'Minyak Goreng Bimoli', 'Dus', '6'),
+(3, 'WG-202113549728', '04/07/2021', '09/09/2021', 'Banten', '1923081008002', 'Air Mineral', 'Dus', '3'),
+(4, 'WG-202174896520', '04/07/2021', '09/09/2021', 'Yogyakarta', '60201311121008264', 'Mie Sedaap Goreng', 'Dus', '3'),
+(5, 'WG-202127134650', '05/07/2021', '10/10/2021', 'Jakarta', '29312390203', 'Air Mineral', 'Dus', '17'),
+(6, 'WG-202110974628', '15/08/2021', '10/10/2021', 'Lampung', '1923081008002', 'Susu Indomilk', 'Dus', '50'),
+(7, 'WG-202181267543', '20/08/2021', '10/10/2021', 'Yogyakarta', '97897952889', 'Minyak Goreng Bimoli', 'Dus', '1'),
+(8, 'WG-202132570869', '24/08/2021', '15/10/2021', 'Bali', '1923081008002', 'Sari Roti', 'Dus', '10'),
+(9, 'WG-202193850472', '24/08/2021', '18/10/2021', 'Bali', '1923081008002', 'Teh Sariwangi', 'Pcs', '11'),
+(10, 'WG-202181267543', '25/08/2021', '25/10/2021', 'Yogyakarta', '97897952889', 'Mie Sedaap Goreng', 'Dus', '10'),
+(11, 'WG-202127134650', '15/09/2021', '28/10/2021', 'Jakarta', '29312390203', 'Susu Kedelai', 'Dus', '3'),
+(12, 'WG-202174896520', '20/09/2021', '02/11/2021', 'Yogyakarta', '60201311121008264', 'Wafer Nabati Keju', 'Dus', '3'),
+(13, 'WG-202127134650', '04/10/2021', '02/11/2021', 'Jakarta', '29312390203', 'Susu Indomilk', 'Dus', '1'),
+(14, 'WG-202127134650', '06/10/20121', '02/11/2021', 'Jakarta', '29312390203', 'Susu Dancow', 'Dus', '1'),
+(15, 'WG-202185472106', '08/10/2021', '05/11/2021', 'Riau', '8996001600146', 'Teh Pucuk', 'Dus', '50'),
+(16, 'WG-202171602934', '11/10/2021', '07/11/2021', 'Papua', '312212331222', 'Kopi Hitam', 'Dus', '10'),
+(17, 'WG-202142905817', '17/10/2021', '10/11/2021', 'Jawa Barat', '1709650909750', 'Sari Roti', 'Dus', '50');
 
 --
 -- Triggers `tb_barang_keluar`
@@ -94,7 +97,8 @@ CREATE TABLE `tb_barang_masuk` (
 --
 
 INSERT INTO `tb_barang_masuk` (`id_transaksi`, `tanggal`, `lokasi`, `kode_barang`, `nama_barang`, `satuan`, `jumlah`) VALUES
-('WG-201871602934', '18/01/2018', 'Papua', '312212331222', 'Kopi Hitam', 'Dus', '90');
+('WG-202142905817', '10/11/2021', 'Jawa Barat', '1709650909750', 'Wafer Nabati Coklat', 'Dus', '200'),
+('WG-202171602934', '09/11/2021', 'Sumatera Utara', '312212331222', 'Top Coffe', 'Dus', '250');
 
 -- --------------------------------------------------------
 
@@ -160,11 +164,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `email`, `password`, `role`, `last_login`) VALUES
-(11, 'zahidin', 'riskididin@ymail.com', '$2y$10$WZYOZcN05JHriS09.C6o7evdWIJ3Obj7vNHzuLunFIAZCDJtG6W1C', 1, '17-03-2018 11:47'),
-(12, 'husni', 'husni@gmail.com', '$2y$10$MXbWRsLw6S6xpyQu2/ZiEeB7oTCLrfEPpDcXWaszFVoYj.Yv51wG.', 0, '17-03-2018 11:19'),
-(16, 'test', 'test@gmail.com', '$2y$10$CTjzvmT5B.dxojKZOxsjTeMc4E7.Gwl9slAgX.0lozwGrKSMxzWdO', 1, '16-03-2018 4:46'),
-(17, 'coba', 'coba@gmail.com', '$2y$10$WRMyjAi8nnkr3J3QvzvyHuEoqay5dYd5NgMJKxsxtXKCp8.JCxZm.', 1, '15-01-2018 15:41'),
-(20, 'admin', 'admin@gmail.com', '$2y$10$3HNkMOtwX8X88Xb3DIveYuhXScTnJ9m16/rPDF1/VTa/VTisxVZ4i', 1, '17-03-2018 11:48');
+(11, 'diva', 'diva@ymail.com', '$2y$10$4L0pjaaMG/QasGsZb0Cja.gkITymA5goi7aCKNimnpxrOovue.Mqu', 1, '14-11-2021 3:36'),
+(12, 'rendy', 'rendy@gmail.com', '$2y$10$4L0pjaaMG/QasGsZb0Cja.gkITymA5goi7aCKNimnpxrOovue.Mqu', 0, '02-10-2021 12:45');
 
 --
 -- Indexes for dumped tables
@@ -208,22 +209,27 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `tb_barang_keluar`
 --
 ALTER TABLE `tb_barang_keluar`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
 --
 -- AUTO_INCREMENT for table `tb_satuan`
 --
 ALTER TABLE `tb_satuan`
   MODIFY `id_satuan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
 -- AUTO_INCREMENT for table `tb_upload_gambar_user`
 --
 ALTER TABLE `tb_upload_gambar_user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
